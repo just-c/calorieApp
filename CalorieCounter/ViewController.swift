@@ -29,7 +29,7 @@ class ViewController: UIViewController {
         dailyGoalLabel.text = dailyGoal
         weightLossTotalLabel.text = weightLossTotal
         percentOfDailyLabel.text = percentOfDaily + "%"
-        currentCalorieLabel.text = "You have lost" + currentCalorie + "LBS total"
+        currentCalorieLabel.text = currentCalorie
     }
 
     override func didReceiveMemoryWarning() {

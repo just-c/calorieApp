@@ -35,8 +35,8 @@ class secondViewController: UIViewController {
             firstView.dailyGoal = dailyGoalText.text;
             firstView.weightLossTotal = weightLossedText.text;
             firstView.currentCalorie = caloriesConsumedText.text
-            var percent:Int = caloriesConsumedText.text.toInt()! / dailyGoalText.text.toInt()!
-            firstView.percentOfDaily = String(percent)
+            var percent:Float = ((caloriesConsumedText.text as NSString).floatValue / (dailyGoalText.text as NSString).floatValue) * 100
+            firstView.percentOfDaily = NSString(format: "%.2f", percent)
         }
         if(segue.identifier == "view")
         {
