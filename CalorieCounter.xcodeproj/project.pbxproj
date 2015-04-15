@@ -1,0 +1,424 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D003A52D1ADDD54800A4F0DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D003A52C1ADDD54800A4F0DA /* AppDelegate.swift */; };
+		D003A52F1ADDD54800A4F0DA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D003A52E1ADDD54800A4F0DA /* ViewController.swift */; };
+		D003A5321ADDD54800A4F0DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D003A5301ADDD54800A4F0DA /* Main.storyboard */; };
+		D003A5341ADDD54800A4F0DA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D003A5331ADDD54800A4F0DA /* Images.xcassets */; };
+		D003A5371ADDD54800A4F0DA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D003A5351ADDD54800A4F0DA /* LaunchScreen.xib */; };
+		D003A5431ADDD54800A4F0DA /* CalorieCounterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D003A5421ADDD54800A4F0DA /* CalorieCounterTests.swift */; };
+		D003A5511ADDDB3600A4F0DA /* secondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D003A5501ADDDB3600A4F0DA /* secondViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D003A53D1ADDD54800A4F0DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D003A51F1ADDD54700A4F0DA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D003A5261ADDD54800A4F0DA;
+			remoteInfo = CalorieCounter;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D003A5271ADDD54800A4F0DA /* CalorieCounter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalorieCounter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D003A52B1ADDD54800A4F0DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D003A52C1ADDD54800A4F0DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D003A52E1ADDD54800A4F0DA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D003A5311ADDD54800A4F0DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D003A5331ADDD54800A4F0DA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D003A5361ADDD54800A4F0DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		D003A53C1ADDD54800A4F0DA /* CalorieCounterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalorieCounterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D003A5411ADDD54800A4F0DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D003A5421ADDD54800A4F0DA /* CalorieCounterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalorieCounterTests.swift; sourceTree = "<group>"; };
+		D003A5501ADDDB3600A4F0DA /* secondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = secondViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D003A5241ADDD54800A4F0DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D003A5391ADDD54800A4F0DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D003A51E1ADDD54700A4F0DA = {
+			isa = PBXGroup;
+			children = (
+				D003A5291ADDD54800A4F0DA /* CalorieCounter */,
+				D003A53F1ADDD54800A4F0DA /* CalorieCounterTests */,
+				D003A5281ADDD54800A4F0DA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D003A5281ADDD54800A4F0DA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D003A5271ADDD54800A4F0DA /* CalorieCounter.app */,
+				D003A53C1ADDD54800A4F0DA /* CalorieCounterTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D003A5291ADDD54800A4F0DA /* CalorieCounter */ = {
+			isa = PBXGroup;
+			children = (
+				D003A52C1ADDD54800A4F0DA /* AppDelegate.swift */,
+				D003A52E1ADDD54800A4F0DA /* ViewController.swift */,
+				D003A5501ADDDB3600A4F0DA /* secondViewController.swift */,
+				D003A5301ADDD54800A4F0DA /* Main.storyboard */,
+				D003A5331ADDD54800A4F0DA /* Images.xcassets */,
+				D003A5351ADDD54800A4F0DA /* LaunchScreen.xib */,
+				D003A52A1ADDD54800A4F0DA /* Supporting Files */,
+			);
+			path = CalorieCounter;
+			sourceTree = "<group>";
+		};
+		D003A52A1ADDD54800A4F0DA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D003A52B1ADDD54800A4F0DA /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D003A53F1ADDD54800A4F0DA /* CalorieCounterTests */ = {
+			isa = PBXGroup;
+			children = (
+				D003A5421ADDD54800A4F0DA /* CalorieCounterTests.swift */,
+				D003A5401ADDD54800A4F0DA /* Supporting Files */,
+			);
+			path = CalorieCounterTests;
+			sourceTree = "<group>";
+		};
+		D003A5401ADDD54800A4F0DA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D003A5411ADDD54800A4F0DA /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D003A5261ADDD54800A4F0DA /* CalorieCounter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D003A5461ADDD54800A4F0DA /* Build configuration list for PBXNativeTarget "CalorieCounter" */;
+			buildPhases = (
+				D003A5231ADDD54800A4F0DA /* Sources */,
+				D003A5241ADDD54800A4F0DA /* Frameworks */,
+				D003A5251ADDD54800A4F0DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CalorieCounter;
+			productName = CalorieCounter;
+			productReference = D003A5271ADDD54800A4F0DA /* CalorieCounter.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D003A53B1ADDD54800A4F0DA /* CalorieCounterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D003A5491ADDD54800A4F0DA /* Build configuration list for PBXNativeTarget "CalorieCounterTests" */;
+			buildPhases = (
+				D003A5381ADDD54800A4F0DA /* Sources */,
+				D003A5391ADDD54800A4F0DA /* Frameworks */,
+				D003A53A1ADDD54800A4F0DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D003A53E1ADDD54800A4F0DA /* PBXTargetDependency */,
+			);
+			name = CalorieCounterTests;
+			productName = CalorieCounterTests;
+			productReference = D003A53C1ADDD54800A4F0DA /* CalorieCounterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D003A51F1ADDD54700A4F0DA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = Justin;
+				TargetAttributes = {
+					D003A5261ADDD54800A4F0DA = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					D003A53B1ADDD54800A4F0DA = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = D003A5261ADDD54800A4F0DA;
+					};
+				};
+			};
+			buildConfigurationList = D003A5221ADDD54800A4F0DA /* Build configuration list for PBXProject "CalorieCounter" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D003A51E1ADDD54700A4F0DA;
+			productRefGroup = D003A5281ADDD54800A4F0DA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D003A5261ADDD54800A4F0DA /* CalorieCounter */,
+				D003A53B1ADDD54800A4F0DA /* CalorieCounterTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D003A5251ADDD54800A4F0DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D003A5321ADDD54800A4F0DA /* Main.storyboard in Resources */,
+				D003A5371ADDD54800A4F0DA /* LaunchScreen.xib in Resources */,
+				D003A5341ADDD54800A4F0DA /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D003A53A1ADDD54800A4F0DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D003A5231ADDD54800A4F0DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D003A52F1ADDD54800A4F0DA /* ViewController.swift in Sources */,
+				D003A5511ADDDB3600A4F0DA /* secondViewController.swift in Sources */,
+				D003A52D1ADDD54800A4F0DA /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D003A5381ADDD54800A4F0DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D003A5431ADDD54800A4F0DA /* CalorieCounterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D003A53E1ADDD54800A4F0DA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D003A5261ADDD54800A4F0DA /* CalorieCounter */;
+			targetProxy = D003A53D1ADDD54800A4F0DA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D003A5301ADDD54800A4F0DA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D003A5311ADDD54800A4F0DA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D003A5351ADDD54800A4F0DA /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D003A5361ADDD54800A4F0DA /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D003A5441ADDD54800A4F0DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D003A5451ADDD54800A4F0DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D003A5471ADDD54800A4F0DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CalorieCounter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D003A5481ADDD54800A4F0DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CalorieCounter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D003A54A1ADDD54800A4F0DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CalorieCounterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CalorieCounter.app/CalorieCounter";
+			};
+			name = Debug;
+		};
+		D003A54B1ADDD54800A4F0DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CalorieCounterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CalorieCounter.app/CalorieCounter";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D003A5221ADDD54800A4F0DA /* Build configuration list for PBXProject "CalorieCounter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D003A5441ADDD54800A4F0DA /* Debug */,
+				D003A5451ADDD54800A4F0DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D003A5461ADDD54800A4F0DA /* Build configuration list for PBXNativeTarget "CalorieCounter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D003A5471ADDD54800A4F0DA /* Debug */,
+				D003A5481ADDD54800A4F0DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D003A5491ADDD54800A4F0DA /* Build configuration list for PBXNativeTarget "CalorieCounterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D003A54A1ADDD54800A4F0DA /* Debug */,
+				D003A54B1ADDD54800A4F0DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D003A51F1ADDD54700A4F0DA /* Project object */;
+}
