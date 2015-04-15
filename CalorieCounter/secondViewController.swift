@@ -24,11 +24,18 @@ class secondViewController: UIViewController {
     
     //sends the data to the first view controller
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        //access the first view controller and its variables
-        var firstView = segue.destinationViewController as ViewController
+        if(segue.identifier == "addItem")
+        {
+            //access the first view controller and its variables
+            var firstView = segue.destinationViewController as ViewController
         
-        //values being set in the other view controller
-        firstView.dailyGoal = dailyGoalInput.text;
-        firstView.weightLossTotal = weightLossedTodayInput.text;
+            //values being set in the other view controller
+            firstView.dailyGoal = dailyGoalInput.text;
+            firstView.weightLossTotal = weightLossedTodayInput.text;
+        }
+        if(segue.identifier == "view")
+        {
+            var view = segue.destinationViewController as ViewController
+        }
     }
 }

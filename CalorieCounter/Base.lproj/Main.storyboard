@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="cvH-ZO-K0K">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="uYc-Za-0xq">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
@@ -32,15 +32,6 @@
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="13" y="176" width="146" height="51"/>
-                                </variation>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gb1-Sq-fWc">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <color key="textColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="317" width="146" height="49"/>
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Percent Of Daily" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mGw-eW-4wh">
@@ -88,40 +79,43 @@
                                     <rect key="frame" x="16" y="235" width="259" height="74"/>
                                 </variation>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gb1-Sq-fWc">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="317" width="146" height="49"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="NEP-7B-lSs"/>
                                 <exclude reference="42l-u0-eBA"/>
-                                <exclude reference="gb1-Sq-fWc"/>
                                 <exclude reference="mGw-eW-4wh"/>
                                 <exclude reference="I4s-pj-O3Y"/>
                                 <exclude reference="dW9-HM-S8b"/>
                                 <exclude reference="4es-lC-UUj"/>
                                 <exclude reference="8Az-IW-UbE"/>
+                                <exclude reference="gb1-Sq-fWc"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
                                 <include reference="NEP-7B-lSs"/>
                                 <include reference="42l-u0-eBA"/>
-                                <include reference="gb1-Sq-fWc"/>
                                 <include reference="mGw-eW-4wh"/>
                                 <include reference="I4s-pj-O3Y"/>
                                 <include reference="dW9-HM-S8b"/>
                                 <include reference="4es-lC-UUj"/>
                                 <include reference="8Az-IW-UbE"/>
+                                <include reference="gb1-Sq-fWc"/>
                             </mask>
                         </variation>
                     </view>
-                    <navigationItem key="navigationItem" id="q18-n1-wbA">
-                        <barButtonItem key="rightBarButtonItem" title="Add" id="wf1-3i-omi">
-                            <connections>
-                                <segue destination="LRI-jg-6HC" kind="show" id="2KX-DZ-La1"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="q18-n1-wbA"/>
                     <connections>
                         <outlet property="currentCalorieLabel" destination="gb1-Sq-fWc" id="ivc-Ji-5FY"/>
                         <outlet property="dailyGoalLabel" destination="42l-u0-eBA" id="4dp-46-027"/>
@@ -131,7 +125,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="897" y="410.25"/>
+            <point key="canvasLocation" x="2584.5" y="391.5"/>
         </scene>
         <!--Second View Controller-->
         <scene sceneID="Bmh-mV-Cgt">
@@ -154,19 +148,6 @@
                                     <rect key="frame" x="16" y="72" width="149" height="59"/>
                                 </variation>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DJ9-bO-mTD">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <state key="normal" title="Submit">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="138" y="397" width="125" height="82"/>
-                                </variation>
-                                <connections>
-                                    <segue destination="vXZ-lx-hvc" kind="show" id="YIx-az-iPh"/>
-                                </connections>
-                            </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2uF-ir-UG9">
                                 <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -174,14 +155,9 @@
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="16" y="139" width="257" height="30"/>
                                 </variation>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SkH-LS-QRq">
-                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="283" width="257" height="30"/>
-                                </variation>
+                                <connections>
+                                    <action selector="close:" destination="LRI-jg-6HC" eventType="editingDidEnd" id="L95-XA-cDa"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weight Lossed Today" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lg2-jm-Hhc">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
@@ -189,34 +165,51 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="216" width="295" height="59"/>
+                                    <rect key="frame" x="16" y="282" width="295" height="59"/>
                                 </variation>
                             </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SkH-LS-QRq">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="349" width="257" height="30"/>
+                                </variation>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="Pga-wm-j4T"/>
-                                <exclude reference="DJ9-bO-mTD"/>
                                 <exclude reference="2uF-ir-UG9"/>
-                                <exclude reference="SkH-LS-QRq"/>
                                 <exclude reference="lg2-jm-Hhc"/>
+                                <exclude reference="SkH-LS-QRq"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
                                 <include reference="Pga-wm-j4T"/>
-                                <include reference="DJ9-bO-mTD"/>
                                 <include reference="2uF-ir-UG9"/>
-                                <include reference="SkH-LS-QRq"/>
                                 <include reference="lg2-jm-Hhc"/>
+                                <include reference="SkH-LS-QRq"/>
                             </mask>
                         </variation>
                     </view>
                     <toolbarItems>
-                        <barButtonItem title="Item" id="OuU-IZ-e5t"/>
+                        <barButtonItem id="OuU-IZ-e5t"/>
                     </toolbarItems>
-                    <navigationItem key="navigationItem" id="2mR-MS-wNz"/>
+                    <navigationItem key="navigationItem" id="2mR-MS-wNz">
+                        <barButtonItem key="leftBarButtonItem" title="View" id="khz-UF-fce">
+                            <connections>
+                                <segue destination="vXZ-lx-hvc" kind="show" identifier="view" id="OUn-aG-SwN"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="+" id="s3T-xM-uck">
+                            <connections>
+                                <segue destination="vXZ-lx-hvc" kind="show" identifier="addItem" id="AXy-Hz-v6A"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="dailyGoalInput" destination="2uF-ir-UG9" id="d9a-ZR-jUQ"/>
@@ -226,28 +219,28 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1vA-zd-lAi" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <barButtonItem title="Item" id="xNt-wq-bFq"/>
             </objects>
-            <point key="canvasLocation" x="1659" y="406.5"/>
+            <point key="canvasLocation" x="1863" y="391.5"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="BQN-xK-r3r">
+        <scene sceneID="1fH-Bv-GAv">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="cvH-ZO-K0K" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="uYc-Za-0xq" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="UEg-FO-9D1">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="i8S-YK-ouh">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="VgT-Fj-DZs"/>
+                        <segue destination="LRI-jg-6HC" kind="relationship" relationship="rootViewController" id="KME-lC-cjQ"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="e5T-vt-kn3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A2W-IY-CT9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="108" y="406.5"/>
+            <point key="canvasLocation" x="1177.5" y="391.5"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="YIx-az-iPh"/>
+        <segue reference="OUn-aG-SwN"/>
     </inferredMetricsTieBreakers>
 </document>
