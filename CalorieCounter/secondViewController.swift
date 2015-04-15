@@ -11,8 +11,10 @@ import UIKit
 class secondViewController: UIViewController {
 
     //--------INPUTS--------
-    @IBOutlet weak var weightLossedTodayInput: UITextField!
-    @IBOutlet weak var dailyGoalInput: UITextField!
+    @IBOutlet weak var dailyGoalText: UITextField!
+    @IBOutlet weak var weightLossedText: UITextField!
+    @IBOutlet weak var caloriesConsumedText: UITextField!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,12 +32,20 @@ class secondViewController: UIViewController {
             var firstView = segue.destinationViewController as ViewController
         
             //values being set in the other view controller
-            firstView.dailyGoal = dailyGoalInput.text;
-            firstView.weightLossTotal = weightLossedTodayInput.text;
+            firstView.dailyGoal = dailyGoalText.text;
+            firstView.weightLossTotal = weightLossedText.text;
+            firstView.currentCalorie = caloriesConsumedText.text
+            var percent:Int = caloriesConsumedText.text.toInt()! / dailyGoalText.text.toInt()!
+            firstView.percentOfDaily = String(percent)
         }
         if(segue.identifier == "view")
         {
             var view = segue.destinationViewController as ViewController
         }
+    }
+    
+    func textFieldShouldReturn(textField: UITextField!) -> Bool{
+        textField.resignFirstResponder();
+        return true
     }
 }

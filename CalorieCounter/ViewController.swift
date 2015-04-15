@@ -17,10 +17,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var currentCalorieLabel: UILabel!
     
     //-------LOCAL VARIABLES FOR THE LABELS--------
-    var dailyGoal:String = "0.0"
-    var weightLossTotal:String = "0.0"
-    var percentOfDaily:String = "0.0"
-    var currentCalorie:String = "0.0"
+    var dailyGoal = String()
+    var weightLossTotal = String()
+    var percentOfDaily = String()
+    var currentCalorie = String()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,8 +28,8 @@ class ViewController: UIViewController {
         //set the lables text when the view is loaded
         dailyGoalLabel.text = dailyGoal
         weightLossTotalLabel.text = weightLossTotal
-        percentOfDailyLabel.text = percentOfDaily;
-        currentCalorieLabel.text = currentCalorie;
+        percentOfDailyLabel.text = percentOfDaily + "%"
+        currentCalorieLabel.text = "You have lost" + currentCalorie + "LBS total"
     }
 
     override func didReceiveMemoryWarning() {
