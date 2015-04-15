@@ -34,15 +34,6 @@
                                     <rect key="frame" x="13" y="176" width="146" height="51"/>
                                 </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Calories" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Az-IW-UbE">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="235" width="259" height="74"/>
-                                </variation>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gb1-Sq-fWc">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
@@ -88,30 +79,39 @@
                                     <rect key="frame" x="16" y="630" width="141" height="46"/>
                                 </variation>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Calories" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Az-IW-UbE">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="235" width="259" height="74"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="NEP-7B-lSs"/>
                                 <exclude reference="42l-u0-eBA"/>
-                                <exclude reference="8Az-IW-UbE"/>
                                 <exclude reference="gb1-Sq-fWc"/>
                                 <exclude reference="mGw-eW-4wh"/>
                                 <exclude reference="I4s-pj-O3Y"/>
                                 <exclude reference="dW9-HM-S8b"/>
                                 <exclude reference="4es-lC-UUj"/>
+                                <exclude reference="8Az-IW-UbE"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
                                 <include reference="NEP-7B-lSs"/>
                                 <include reference="42l-u0-eBA"/>
-                                <include reference="8Az-IW-UbE"/>
                                 <include reference="gb1-Sq-fWc"/>
                                 <include reference="mGw-eW-4wh"/>
                                 <include reference="I4s-pj-O3Y"/>
                                 <include reference="dW9-HM-S8b"/>
                                 <include reference="4es-lC-UUj"/>
+                                <include reference="8Az-IW-UbE"/>
                             </mask>
                         </variation>
                     </view>
@@ -154,15 +154,19 @@
                                     <rect key="frame" x="16" y="72" width="149" height="59"/>
                                 </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weight Lossed Today" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lg2-jm-Hhc">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DJ9-bO-mTD">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
+                                <state key="normal" title="Submit">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="216" width="295" height="59"/>
+                                    <rect key="frame" x="138" y="397" width="125" height="82"/>
                                 </variation>
-                            </label>
+                                <connections>
+                                    <segue destination="vXZ-lx-hvc" kind="show" id="YIx-az-iPh"/>
+                                </connections>
+                            </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2uF-ir-UG9">
                                 <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -179,37 +183,33 @@
                                     <rect key="frame" x="16" y="283" width="257" height="30"/>
                                 </variation>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DJ9-bO-mTD">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weight Lossed Today" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lg2-jm-Hhc">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <state key="normal" title="Submit">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="138" y="397" width="125" height="82"/>
+                                    <rect key="frame" x="16" y="216" width="295" height="59"/>
                                 </variation>
-                                <connections>
-                                    <segue destination="vXZ-lx-hvc" kind="show" id="YIx-az-iPh"/>
-                                </connections>
-                            </button>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="Pga-wm-j4T"/>
-                                <exclude reference="lg2-jm-Hhc"/>
+                                <exclude reference="DJ9-bO-mTD"/>
                                 <exclude reference="2uF-ir-UG9"/>
                                 <exclude reference="SkH-LS-QRq"/>
-                                <exclude reference="DJ9-bO-mTD"/>
+                                <exclude reference="lg2-jm-Hhc"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
                                 <include reference="Pga-wm-j4T"/>
-                                <include reference="lg2-jm-Hhc"/>
+                                <include reference="DJ9-bO-mTD"/>
                                 <include reference="2uF-ir-UG9"/>
                                 <include reference="SkH-LS-QRq"/>
-                                <include reference="DJ9-bO-mTD"/>
+                                <include reference="lg2-jm-Hhc"/>
                             </mask>
                         </variation>
                     </view>

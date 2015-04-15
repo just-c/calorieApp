@@ -2,7 +2,7 @@
 //  secondViewController.swift
 //  CalorieCounter
 //
-//  Created by Justin on 2015-04-14.
+//  Created by Justin, Alex and Khris on 2015-04-14.
 //  Copyright (c) 2015 Justin. All rights reserved.
 //
 
@@ -16,17 +16,18 @@ class secondViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
+    //sends the data to the first view controller
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        //access the first view controller and its variables
         var firstView = segue.destinationViewController as ViewController
+        
+        //values being set in the other view controller
         firstView.dailyGoal = dailyGoalInput.text;
         firstView.weightLossTotal = weightLossedTodayInput.text;
     }
