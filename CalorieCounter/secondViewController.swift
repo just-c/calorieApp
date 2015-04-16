@@ -36,18 +36,15 @@ class secondViewController: UIViewController {
         {
             //access the first view controller and its variables
             var firstView = segue.destinationViewController as ViewController
-        
-            //values being set in the other view controller
             firstView.dailyGoal = dailyGoalText.text;
             
-            //sets the total weight that you have lossed
-            firstView.weightLossTotal = "0"
+            //sets the weight loss total
             var totalWeightLossed:Int = (firstView.weightLossTotal.toInt()! + weightLossedText.text.toInt()!)
             firstView.weightLossTotal = String(totalWeightLossed);
-            
+          
             //sets the number of calories you consumed
             firstView.currentCalorie = caloriesConsumedText.text
-            
+           
             //sets the percent label
             var percent:Float = ((caloriesConsumedText.text as NSString).floatValue / (dailyGoalText.text as NSString).floatValue) * 100
             firstView.percentOfDaily = NSString(format: "%.2f", percent)
