@@ -2,8 +2,8 @@
 //  ViewController.swift
 //  CalorieCounter
 //
-//  Created by Justin, Alex and Khris on 2015-04-14.
-//  Copyright (c) 2015 Justin. All rights reserved.
+//  Created by Justin Ward, Alex Barbosa and Khris Dickson on 2015-04-14.
+//  Copyright (c) 2015 Justin Ward, Alex Barbosa and Khris Dickson. All rights reserved.
 //
 
 import UIKit
@@ -25,6 +25,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        var props = saveProperties()
+        
         //set the lables text when the view is loaded
         dailyGoalLabel.text = dailyGoal
         weightLossTotalLabel.text = weightLossTotal
@@ -34,7 +36,6 @@ class ViewController: UIViewController {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 }
 
