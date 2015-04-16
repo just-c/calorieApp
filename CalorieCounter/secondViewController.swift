@@ -30,14 +30,20 @@ class secondViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
     
+    
     //sends the data to the first view controller
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if(segue.identifier == "addItem")
         {
+            
+            
+            
+            
             //access the first view controller and its variables
             var firstView = segue.destinationViewController as ViewController
+
             firstView.dailyGoal = dailyGoalText.text;
-            
+
             //sets the weight loss total
             var totalWeightLossed:Int = (firstView.weightLossTotal.toInt()! + weightLossedText.text.toInt()!)
             firstView.weightLossTotal = String(totalWeightLossed);
@@ -65,14 +71,27 @@ class secondViewController: UIViewController {
             props.percentOfDailySave = defaults.objectForKey("percentOfDaily") as String;
             
         }
+        
+        //go to app view
         if(segue.identifier == "view")
         {
             var view = segue.destinationViewController as ViewController
         }
     }
     
-    func textFieldShouldReturn(textField: UITextField!) -> Bool{
-        textField.resignFirstResponder();
-        return true
+    //hides keyboard when touched outside of textbox
+    override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
+        self.view.endEditing(true);
     }
+    
+
+    
+
+    //hides keyboard when touched outside of textbox
+    func textFieldShouldReturn(textField: UITextField!) -> Bool {
+        self.view.endEditing(true)
+        return false
+    }
+    
+    
 }

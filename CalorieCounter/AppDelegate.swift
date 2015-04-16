@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  CalorieCounter
 //
-//  Created by Justin on 2015-04-14.
-//  Copyright (c) 2015 Justin. All rights reserved.
+//  Created by Justin, Khris, Alex on 2015-04-14.
+//  Copyright (c) 2015 Justin, Khris, Alex . All rights reserved.
 //
 
 import UIKit
@@ -15,6 +15,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        //show launch screen for 5 seconds
+        sleep(5);
         // Override point for customization after application launch.
         return true
     }
